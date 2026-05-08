@@ -13,7 +13,7 @@ This is the "Simple SQA" (Simple Question Answering) version. It establishes the
 ## ⚙️ The App Flow is given in the picture
 This ResearchAgent v1.0 utilizes a state-of-the-art LangGraph architecture to transform static PDFs into interactive research assets. The workflow shown below begins by extracting raw text from a local PDF file using pypdf, which is then stored in a centralized PDFState container along with the user's research query. This state is passed to a specialized reasoning node powered by Google Gemini 1.5 Flash, where a low-temperature (0.1) configuration ensures that the generated responses are grounded strictly in the provided document to maintain high academic integrity. By leveraging Google's expansive context window, this system provides an accessible, cost-free alternative to proprietary models, establishing a scalable foundation for future multi-document analysis and automated literature reviews.
 
-![Alt Text](workflow1.png)
+![Alt Text](workflow2.png)
 
 ### Features:
 - **Local PDF Processing:** Extracts text from your research papers using `pypdf`.
@@ -51,6 +51,10 @@ pip install -U langgraph langchain-google-genai langchain-core pypdf python-dote
    ```bash
    python SQA.py
    ```
+
+## 📜 Version History
+- **v1.0**: Initial release. Supports single-shot questions on a single PDF[cite: 1, 3].
+- **v1.1 (Current)**: Added a continuous loop. Users can now ask multiple questions about the same document without restarting the script.
 
 ---
 *Created by Yusuf Aliyu - PhD Candidate in IT*
