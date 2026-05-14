@@ -1,4 +1,4 @@
-# ResearchAgent-v1.0 (Alpha)
+# ResearchAgent-v1.1 (Alpha)
 
 An intelligent, document-aware research assistant built with LangGraph and Google Gemini. This is the base version (v1.0) of an ongoing project to create a full-scale automated research assistant.
 
@@ -7,7 +7,7 @@ The goal of this project is to develop a comprehensive AI agent specifically des
 
 Why Google Gemini? To ensure this tool is accessible to researchers worldwide without financial barriers, I have integrated Google Gemini 1.5 Flash/Pro. This allows users to leverage a massive context window and powerful reasoning for free (within Google's AI Studio tiers), making it more accessible than GPT-based alternatives.
 
-## 📌 Version 1.0 (Current Release)
+## 📌 Version 1.1 (Current Release)
 This is the "Simple SQA" (Simple Question Answering) version. It establishes the bridge between your local PDF documents and the LLM.
 
 ## ⚙️ The App Flow is given in the picture
@@ -19,11 +19,11 @@ This ResearchAgent v1.0 utilizes a state-of-the-art LangGraph architecture to tr
 - **Local PDF Processing:** Extracts text from your research papers using `pypdf`.
 - **Stateful Logic:** Utilizes `LangGraph` to manage the flow of information.
 - **Controlled Reasoning:** Set to low temperature (0.1) for high factual accuracy.
+- ** Multiple questions loop** per execution.
 
 ### ⚠️ Current Limitations:
 - **Single File:** Can only process one PDF file per session.
 - **File Placement:** The PDF must be in the same directory as the script.
-- **Single Question:** Currently optimized for one question per execution.
 - **Context Limit:** Best suited for standard research papers (under 30 pages) to ensure Gemini's free tier token limits are respected.
 
 ## 🛠️ Setup Instructions
