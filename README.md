@@ -1,4 +1,4 @@
-# ResearchAgent-v1.2 (Alpha)
+
 # ResearchAgent-v1.1 (Alpha)
 
 An intelligent, document-aware research assistant built with LangGraph and Google Gemini. This is the base version (v1.0) of an ongoing project to create a full-scale automated research assistant.
@@ -8,7 +8,6 @@ The goal of this project is to develop a comprehensive AI agent specifically des
 
 Why Google Gemini? To ensure this tool is accessible to researchers worldwide without financial barriers, I have integrated Google Gemini 1.5 Flash/Pro. This allows users to leverage a massive context window and powerful reasoning for free (within Google's AI Studio tiers), making it more accessible than GPT-based alternatives.
 
-## 📌 Version 1.2 (Current Release)
 ## 📌 Version 1.1 (Current Release)
 This is the "Simple SQA" (Simple Question Answering) version. It establishes the bridge between your local PDF documents and the LLM.
 
